@@ -28,3 +28,10 @@ function pad (val){
     }
 }
 })
+
+
+// RESET //
+reset.addEventListener("click", function (){
+    totalSeconds = 0;
+})
+
