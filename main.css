@@ -1,0 +1,12 @@
+body{
+    font-size: 12px;
+    background: rgba(72, 168, 72, 0.378);
+}
+.container {
+    background: conic-gradient(#a9f63c, #4ac1f4);
+    margin: 6rem 7rem 0rem 7rem;
+    font-size: 8rem;
+    color: white;
+    border-radius: 30px;
+    border: 7px solid white;
+}
