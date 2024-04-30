@@ -19,3 +19,18 @@ body{
     text-align: center;
 }
 
+button {
+    color: white;
+    background-color: rgb(197, 93, 228);
+    padding: 1rem 4rem;
+    border-radius: 35px;
+    border: 3px solid white;
+    font-size: 1.5rem;
+    margin: 0rem 1rem 3rem 0rem;
+    cursor: pointer;
+}
+
+.animation {
+
+    transition: all 0.9s;
+}
