@@ -11,6 +11,7 @@ const timeDelay = 10000;
 
 // START //
 start.addEventListener("click", function(){
+    counting.classList.add("leAnimate")
     setInterval(setTime, 1000);
 
 function setTime(){
@@ -35,3 +36,7 @@ reset.addEventListener("click", function (){
     totalSeconds = 0;
 })
 
+// Pause //
+
+
+// pause.addEventListener("click", handlePause)

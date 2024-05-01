@@ -9,10 +9,16 @@ body{
     color: white;
     border-radius: 30px;
     border: 7px solid white;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.359);
+    transform: skewX(-7deg); 
 }
 .counting {
     text-align: center;
 }
+.leAnimate{
+    animation: animate 0.4s;
+}
+
 
 
 .buttons {
@@ -28,9 +34,29 @@ button {
     font-size: 1.5rem;
     margin: 0rem 1rem 3rem 0rem;
     cursor: pointer;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.359);
+    transform: skewX(10deg); 
 }
 
-.animation {
-
-    transition: all 0.9s;
+button:hover{
+    animation: animate 0.4s;
 }
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg) translateX(0px);
+    }
+    25%{
+        transform: rotate(-10deg) translateX(-10px);
+    }
+    50%{
+        transform: rotate(0deg) translateX(0px);
+    }
+    75%{
+        transform: rotate(10deg) translateX(10px);
+    }
+    100%{
+        transform: rotate(0deg) translateX(0px);
+    }
+}
+
