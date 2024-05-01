@@ -42,3 +42,8 @@ reset.addEventListener("click", function (){
     totalSeconds = 0;
 })
 
+// Pause //
+function handlePause(){
+   
+}
+pause.addEventListener("click", handlePause)
