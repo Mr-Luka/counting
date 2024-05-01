@@ -44,6 +44,10 @@ reset.addEventListener("click", function (){
 
 // Pause //
 function handlePause(){
-   
+    pauseE = !pauseE;
+    if (pauseE){
+        clearInterval(intervalId);
+        intervalId = null;
+    } 
 }
 pause.addEventListener("click", handlePause)
