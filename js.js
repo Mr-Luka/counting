@@ -5,14 +5,8 @@ const reset = document.querySelector(".reset");
 const start = document.querySelector(".start");
 const pause = document.querySelector(".pause");
 let totalSeconds = 0;
-const timeDelay = 10000;
-
-
-
-// START //
-start.addEventListener("click", function(){
-    counting.classList.add("leAnimate")
-    setInterval(setTime, 1000);
+let pauseE = false;
+let intervalId;
 
 function setTime(){
     totalSeconds++;
@@ -28,15 +22,23 @@ function pad (val){
         return valString;
     }
 }
-})
 
+// START //
+start.addEventListener("click", function(){
+    if(!intervalId){
+        if(pauseE){
+            intervalId = setInterval(setTime, 1000);
+            pauseE = false;
+            counting.classList.add("leAnimate")
+        } else {
+    counting.classList.add("leAnimate")
+    intervalId = setInterval(setTime, 1000);
+        }
+    }
+})
 
 // RESET //
 reset.addEventListener("click", function (){
     totalSeconds = 0;
 })
 
-// Pause //
-
-
-// pause.addEventListener("click", handlePause)
